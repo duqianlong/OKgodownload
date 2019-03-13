@@ -115,16 +115,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void skjfd() {
-        OkGo.<String>get("sfad")
-                .execute(new StringCallback() {
-                    @Override
-                    public void onSuccess(Response<String> response) {
-                        String s = response.body().toString();
-                    }
-                });
-
-    }
-
-
 }
