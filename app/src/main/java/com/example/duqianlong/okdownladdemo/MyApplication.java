@@ -19,6 +19,7 @@ public class MyApplication extends Application {
                 .sslSocketFactory(SSLSocketClient.getSSLSocketFactory())
                 .hostnameVerifier(SSLSocketClient.getHostnameVerifier())
                 .build();
+          //初始化okgo并设置httpclient
         OkGo.getInstance().init(this).setOkHttpClient(build);
     }
 }
