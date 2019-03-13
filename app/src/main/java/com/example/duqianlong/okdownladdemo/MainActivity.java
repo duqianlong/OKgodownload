@@ -56,8 +56,10 @@ public class MainActivity extends AppCompatActivity {
                         super.downloadProgress(progress);
                         long totalSize = progress.totalSize;//总长度
                         long currentSize = progress.currentSize;//本次下载的大小
+                        //正常进度条
                         progressBar.setMax((int) totalSize);
                         progressBar.setProgress((int) currentSize);
+                        //自定义的进度条
                         circleProgressBar.setMax((int) totalSize);
                         circleProgressBar.setProgress((int) currentSize);
 
